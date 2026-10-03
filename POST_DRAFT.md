@@ -4,7 +4,7 @@
 
 ## What I built
 
-I built **Udhaar** for **[friend's name and relationship]**, who runs a neighbourhood kirana shop in **[city/neighbourhood]**. Their recurring problem was recording small customer debts quickly while serving the next person. Paper notes get lost, and a cloud app is a poor fit for sensitive customer names and balances.
+I built **Udhaar** for my friend **Purushottam**, who runs a neighbourhood kirana shop in **Pune**. His recurring problem was recording small customer debts quickly while serving the next person. Paper notes get lost, and a cloud app is a poor fit for sensitive customer names and balances.
 
 Udhaar lets the shopkeeper speak or type a Hindi, Marathi, or Hinglish entry such as “Ramesh ji ko 340 ka samaan udhaar”. It proposes a structured entry, asks the shopkeeper to confirm it, and then updates a simple khata.
 
@@ -12,7 +12,7 @@ It also shows balances, a monthly summary, and polite WhatsApp reminder links. T
 
 ## Demo
 
-- Live demo or short video: **[add link]**
+- Demo video: https://youtu.be/8X4TxyVbnI8
 - Repository: https://github.com/aun009/udhaar
 - Local demo: `UDHAAR_MOCK=1 uvicorn app.main:app --host 0.0.0.0 --port 8000`, then open `http://127.0.0.1:8000`.
 
