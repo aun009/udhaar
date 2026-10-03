@@ -1,0 +1,2 @@
+audio_file,dialect,notes,expected_json
+clip_01.wav,hindi,example credit,"{""customer"": ""Demo ji"", ""amount"": 340, ""type"": ""credit_given"", ""note"": null, ""error"": null}"

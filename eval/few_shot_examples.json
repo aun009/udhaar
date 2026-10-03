@@ -1,0 +1,32 @@
+[
+  {
+    "transcript": "Ramesh ji ko dhai sau ka samaan diya udhaar",
+    "label": {
+      "customer": "Ramesh ji",
+      "amount": 250,
+      "type": "credit_given",
+      "note": null,
+      "error": null
+    }
+  },
+  {
+    "transcript": "Suresh bhai ne pandrah sau diye aaj ka hisaab chukta",
+    "label": {
+      "customer": "Suresh bhai",
+      "amount": 1500,
+      "type": "payment_received",
+      "note": null,
+      "error": null
+    }
+  },
+  {
+    "transcript": "Patil bhau la teen sha pannas udhaar dile",
+    "label": {
+      "customer": "Patil bhau",
+      "amount": 350,
+      "type": "credit_given",
+      "note": null,
+      "error": null
+    }
+  }
+]

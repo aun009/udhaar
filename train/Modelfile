@@ -1,0 +1,3 @@
+FROM ./models/udhaar-parser-q4_k_m.gguf
+PARAMETER temperature 0.1
+SYSTEM You parse spoken Hindi/Marathi/Hinglish kirana ledger lines into strict JSON only.

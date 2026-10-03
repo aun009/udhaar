@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Udhaar — Khata</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>उधार Khata</h1>
+    <p id="status">Loading…</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Nayi entry</h2>
+      <textarea id="transcript" rows="3" placeholder="Boliye ya likhiye: Ramesh ji ko 340 ka samaan udhaar"></textarea>
+      <div class="row">
+        <button type="button" id="btn-parse" class="primary">Samjho / Parse</button>
+        <button type="button" id="btn-mic" class="secondary">🎤 Mic</button>
+      </div>
+      <p id="heard" class="muted"></p>
+    </section>
+
+    <section class="card hidden" id="confirm-card">
+      <h2>Confirm karein</h2>
+      <p id="preview" class="preview"></p>
+      <label>Customer <input id="f-customer" /></label>
+      <label>Amount (₹) <input id="f-amount" type="number" /></label>
+      <label>Type
+        <select id="f-type">
+          <option value="credit_given">Udhaar (credit)</option>
+          <option value="payment_received">Payment received</option>
+        </select>
+      </label>
+      <label>Note <input id="f-note" /></label>
+      <div class="row">
+        <button type="button" id="btn-confirm" class="primary">Save</button>
+        <button type="button" id="btn-cancel" class="secondary">Cancel</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Customers</h2>
+      <ul id="customers"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Reminders (tap to WhatsApp — manual send only)</h2>
+      <ul id="reminders"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Saara hisaab</h2>
+      <div id="summary"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

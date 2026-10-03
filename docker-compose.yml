@@ -1,0 +1,37 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    profiles: ["llm"]
+
+  udhaar:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      UDHAAR_MOCK: "${UDHAAR_MOCK:-0}"
+      OLLAMA_HOST: "http://ollama:11434"
+      UDHAAR_MODEL_BASE: "qwen2.5:3b-instruct"
+      WHISPER_MODEL: "small"
+      WHISPER_DEVICE: "cpu"
+      WHISPER_COMPUTE: "int8"
+    volumes:
+      - ./udhaar.db:/app/udhaar.db
+    depends_on:
+      - ollama
+    profiles: ["llm"]
+
+  udhaar-mock:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      UDHAAR_MOCK: "1"
+    volumes:
+      - ./udhaar.db:/app/udhaar.db
+
+volumes:
+  ollama_data:
