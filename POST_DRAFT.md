@@ -13,7 +13,7 @@ It also shows balances, a monthly summary, and polite WhatsApp reminder links. T
 ## Demo
 
 - Live demo or short video: **[add link]**
-- Repository: **[add public GitHub URL]**
+- Repository: https://github.com/aun009/udhaar
 - Local demo: `UDHAAR_MOCK=1 uvicorn app.main:app --host 0.0.0.0 --port 8000`, then open `http://127.0.0.1:8000`.
 
 The mock mode runs without a GPU, microphone, or network model service. The production path uses local Whisper and Ollama instead.
@@ -53,7 +53,7 @@ The second row should be read as 120 examples, 10.00% exact JSON, 25.83% custome
 
 ## Open source and code
 
-- Source: **[add GitHub URL]**
+- Source: https://github.com/aun009/udhaar
 - Evaluation details: `eval/RESULTS.md`
 - Training notes: `train/README.md`
 
